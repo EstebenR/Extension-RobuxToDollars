@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "RobuxToDollars",
+	"version": "1.0",
+  
+	"description": "Adds the dollar value next to robux mentions in Roblox.",
+  
+	"icons": {
+	  "48": "icons/rtd-48.png",
+	  "96": "icons/rtd-96.png"
+	},
+  
+	"content_scripts": [
+	  {
+		"matches": ["*://*.roblox.com/talent/*"],
+		"js": ["robuxtodollars.js"]
+	  }
+	]
+  }
+  
